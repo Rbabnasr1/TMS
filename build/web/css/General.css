@@ -1,0 +1,940 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 14-Jun-2017, 05:26:31
+    Author     : rabab
+*/
+body{
+    background-color: white;
+}
+a{
+    color: #000;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+}/*
+*/g{
+    color: #5a0f41;
+    font-size: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+a:hover{
+    color: #0591f8 ;
+}
+/*h{   color: #660066 ;
+     font-size: 50px;
+
+}*/
+.taskType{
+    width: 200px;
+    height: 150px;
+    background-color: rgb(19, 35, 47);
+    opacity: .9;
+    text-align: center;
+    margin: 200px 800px 800px 500px;
+
+}
+#imageUpload
+{
+    display: none;
+
+}
+/*popup pp*/
+#profileImage
+{
+    cursor: pointer;
+    width: 350px;
+    height: 350px;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+
+}
+/* checked soret alprofile*/
+/*#profile-container {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    image-resolution: 200dpi snap;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-image-resolution: 200dpi snap;
+    -moz-image-resolution: 200dpi snap;
+    -ms-image-resolution: 200dpi snap;
+    -o-image-resolution: 200dpi snap;
+    border-bottom-style: solid;
+    border-bottom-style: solid;
+    border-bottom: 100px;
+    box-shadow: 0 1px 3px #000 ;
+    position: relative;
+    margin-right:  20px;
+
+}*/
+
+
+
+/*#profile-container img {
+    width: 200px;
+    height: 200px;
+    image-resolution: 72dpi;
+    border-bottom-style: solid;
+    border-bottom: 100px;
+    box-shadow: 0 1px 3px #000 ;
+
+}   */
+/*
+input[type=search].search {
+    width: 130px;
+    width: 400px;
+    height: 30px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 15px;
+    background-color: white;
+    background-image: url('search.png');
+    color: #000;
+    background-position: 2px 2px; 
+    background-repeat: no-repeat;
+    background-size: 20px;
+    padding: 10px 0px 10px 40px;
+    cursor: pointer;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    box-shadow:2px 2px 6px #d4cad1;
+    text-decoration: none;
+    
+    }*/
+
+/*
+
+
+a.profile{
+
+    width:  400px;
+    height: 10px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 15px;
+    background-color: white;
+    background-image: url('profile.png');
+    background-position: 4px 4px; 
+    background-repeat: no-repeat;
+    background-size: 30px;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+a.homePage{
+
+    width:  400px;
+    height: 10px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 15px;
+    background-color: white;
+    background-image: url('home.png');
+    background-position: 15px 10px;
+    background-repeat: no-repeat;
+    background-size: 50px;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+
+}*/
+
+a.msg{
+
+    width:  500px;
+    height: 10px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 15px;
+    background-color: white;
+    background-image: url('msg.png');
+    background-position: 4px 4px; 
+
+    background-repeat: no-repeat;
+    background-size: 30px;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+
+#iconReport {
+    width: 101px;
+    height: 40px;
+    box-sizing: border-box;
+    border: 2px hidden #ccc;
+    /* background-color: #f3f4f7; */
+    background-image: url(Char.png);
+    background-position: 7px 4px;
+    background-repeat: no-repeat;
+    background-size: 35px;
+    padding: 23px 18px 20px 20px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    text-align: center;
+}
+/*#iconReport:hover{
+    background-color: #eef0f0f;
+}*/
+input[type=text].search:focus {
+    /*width: 250px;*/
+}
+/*a:hover{
+    color: #28A0C3;
+}*/
+.taskType{
+    width: 200px;
+    height: 150px;
+    background-color: rgb(19, 35, 47);
+    opacity: .9;
+    text-align: center;
+    margin: 200px 800px 800px 500px;
+
+}
+h1{
+    /*    color: #721050;
+        font-size: 20px;*/
+    text-align: center;
+    text-decoration: none;
+
+}
+h.Welcome{
+    color: darkcyan;
+    font-size: 50px;
+    text-align: center;
+    text-decoration: none;
+    padding: 28%;
+
+
+}
+
+
+/*Set a style for all buttons*/ 
+/*Set a style for all buttons(post )*/ 
+button {
+    background-color: #0a426c;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 10%;
+    height: 50px;
+
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+/*.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}*/
+.cancelbtnn{
+    width: auto;
+    padding: 10px 18px;
+    background-color: #C1196E6E;
+    color: white;
+
+}
+
+
+/*popup lel profile picture upload*/
+.Popcontainer {
+    padding: 12px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
+/*///////////////////////////////////////////////////////////////////////////////////// createTask.jsp*/
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+input[type=submit].CreateTask{
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 25%;
+
+}
+
+
+
+/* Extra styles for the cancel button */
+/*.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #C1196E;
+}*/
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+/*img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}*/
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+/*.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}*/
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
+div.Skills_name{
+    overflow: auto; 
+    width: 200px;
+    height: 200px;
+}
+
+input[type=file]._file{
+    width:  400px;
+    height: 40px;
+    font-size: 15px;
+    background-color: white;
+    background-image: url('upload.png');
+    background-position: 4px 4px; 
+    background-repeat: no-repeat;
+    background-size: 30px;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+
+}
+.dropbtn:hover, .dropbtn:focus {
+    /*background-color: #3e8e41;*/
+}
+
+.dropdown {
+    /*margin-left: 1100px ;*/
+    position: relative;
+    top: -3px;
+    right: 100px;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: relative;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+
+
+}
+
+
+/*.dropdown a:hover {background-color: #f1f1f1}*/
+
+.show {display:block;}
+/*Notif*/
+/*.Listbtn{
+
+    background-color: #990066;
+    padding: 30px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    background-image: url('not.png');
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: 4px 4px; 
+
+}*/
+
+/*.List {
+    position: relative;
+    display: inline-block;
+    margin-top: -300px;
+    margin-right: 350px;
+    
+
+}*/
+/*
+.List-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 400px;
+    max-width: 250px;
+    box-shadow: 0px 1px 16px 0px rgba(0,0,0,0.2);
+    width: 300px;
+    overflow: auto;
+    max-height: 200px;
+    cursor: pointer;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+
+
+}*/
+
+/*.List-content a.noti {
+    color: #45022f;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 13px; 
+    border-bottom: 0.2px solid rgba(171,171,171,.5);
+
+}
+
+.List-content a.searchContent {
+    color: black;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 18px; 
+    border-bottom: 0.2px solid rgba(171,171,171,.5);
+   
+
+}
+*/
+
+/*.List-content a:hover {background-color: #ffccff}*/
+/*
+.List:hover .List-content {
+    display: block;
+}
+
+.List:hover .Listbtn
+{background-image: url('notf.png');}*/
+
+.All-Information{
+
+    width: 550px;
+    /*height: 550px;*/
+    position: absolute;
+    background-color: #F3F4F7;
+    border-radius: 40px;
+    box-shadow: 1px 5px 8px #d4cad1,1px 10px 20px #d4cad1;
+    overflow: auto;
+    /*overflow-x: hidden;*/
+    min-height: 40px;
+    max-height: 500px;
+    text-align: center;
+
+}
+
+#Info{
+    position: absolute; 
+    margin-top: -200px;
+    margin-left: 100px;
+
+}
+
+.SA{
+    font-size:40px;text-decoration: none
+
+
+
+}
+.SA:hover{
+    color:#C1196E; 
+    text-decoration: none;
+}          
+
+.star-cb-group {
+    /* remove inline-block whitespace */
+    font-size: 0;
+    /* flip the order so we can use the + and ~ combinators */
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    /* the hidden clearer */
+}
+.star-cb-group * {
+    font-size: 1rem;
+}
+.star-cb-group > input {
+    display: none;
+}
+.star-cb-group > input + label {
+    /* only enough room for the star */
+    display: inline-block;
+    overflow: hidden;
+    text-indent: 9999px;
+    width: 1em;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size:40px;
+}
+.star-cb-group > input + label:before {
+    display: inline-block;
+    text-indent: -9999px;
+    content: "☆";
+    color: #4CAF50;
+}
+.star-cb-group > input:checked ~ label:before, .star-cb-group > input + label:hover ~ label:before, .star-cb-group > input + label:hover:before {
+    content: "★";
+    color: #4ca916;
+    text-shadow: 0 0 1px #333;
+}
+.star-cb-group > .star-cb-clear + label {
+    text-indent: -9999px;
+    width: .5em;
+    margin-left: -.5em;
+}
+.star-cb-group > .star-cb-clear + label:before {
+    width: .5em;
+}
+.star-cb-group:hover > input + label:before {
+    content: "☆";
+    color: #4CAF50;
+    text-shadow: none;
+}
+.star-cb-group:hover > input + label:hover ~ label:before, .star-cb-group:hover > input + label:hover:before {
+    content: "★";
+    color: #4ca916;
+    text-shadow: 0 0 1px #333;
+}
+
+
+
+.info{ color: #000;
+       font-size: 20px;
+       border-bottom-style: solid;
+       border-bottom: 100px;
+       box-shadow: 0 1px 3px #000 ;    
+}
+
+#postcamp {
+    font-size:25px;
+    background-color: white;
+    color: black;
+    border: #ccc solid 0.3px;
+    width: 600px;
+    height: 100px
+
+}
+
+
+
+
+#SaOpt
+{
+    font-size: medium;
+    background-color:#4E6B81;
+    color: #F3F4F7;
+    width: 250px;
+    text-align: center;
+
+}
+#daOpt
+{
+    font-size: medium;
+    background-color: white;
+    color: white;
+    width: 250px;
+    position: absolute;
+    overflow: auto;
+    /*overflow-x: hidden;*/
+    /*min-height: 40px;*/
+    /*max-height: 500px;*/
+    text-align: center;
+}
+
+
+#tempMove{
+    position: absolute;
+    top: 750px;
+    margin-top: -180px;
+    width: 200px;
+    padding-bottom: 20px;
+
+}
+
+#addMember{
+    width: 220px;
+    height: 70px; 
+    overflow: hidden;
+    border-radius: 0.1px;
+    position: absolute;
+    top:300px;
+    margin-top: -800px;
+    left: 1050px;
+    margin-left: 1000px;
+    background-color: white;
+    box-shadow: 0px 0px 0px 0px;
+}
+
+#movedepOpt{
+    width: 300px;
+    height: 300px;
+    /*background-color: yellow;*/
+    /*box-sizing: 500px;*/
+    /*border: 1px solid #000;*/
+    display:block; 
+    position: absolute;
+    top :280px;
+    left: 1400px;
+
+}
+
+*************************************Campaign*******************************************
+h.Welcome,p.Welcome{
+    color: #660066;
+    font-size: 30px;
+    font-size: large;
+    text-decoration: none;
+    padding: 28%;
+
+}
+
+#Info{
+    position: relative; 
+    top: 50px;
+    left:100px;
+    width: 450px;
+}
+
+
+.log :hover{
+    background: #F3F4F7;
+    color: white;
+    text-decoration: none;
+    /*display: block;*/
+}
+
+/**********************************campaign**************************************/
+h1{
+
+    font-size: 40px;
+    text-align: center;
+    color: #0a426c;
+}
+
+
+
+.camp{
+    background-color: #F3F4F7;
+    height: 50px;
+    /*min-width: 100px;*/
+    /*padding: 5px 5px 5px 5px;*/
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 0px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 20px;
+    box-shadow: 1px 3px 6px #d4cad1,1px 7px 17px #d4cad1;
+}
+
+.camp-Information{
+
+    width:250px;
+    /*height: 550px;*/
+    position: absolute;
+    background-color: #F3F4F7;
+    border-radius: 20px;
+    box-shadow: 1px 5px 8px #d4cad1,1px 10px 20px #d4cad1;
+    margin-top: 50px;
+    /*overflow: auto;*/
+    word-wrap: break-word;
+    /*overflow-x: hidden;*/
+    /*min-height: 40px;*/
+    /*max-height: 500px;*/
+    text-align: start;
+    padding-top: -5px;
+    padding-left: 20px;
+    font-size: 20px;
+    color: #4E6B81;
+}
+#postformat{
+    text-align: left;
+    padding: 0 10px;
+    font-size: large;
+    background-color:#F3F4F7;
+    border-radius: 0.3px;
+    /*left: 300px;*/
+
+    margin-left: 5px;
+    /*min-height: 100px;*/
+    word-wrap: break-word;
+    width:  570px; 
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+
+
+.all-post{
+    position: absolute;
+    left: 470px;
+    top: 250px;
+}
+.in-post{
+    position: absolute;
+    left: 470px;
+    top: 400px;
+}
+
+.moveOpt{
+    /*text-align: center;*/
+    font-weight: bold;
+    position: absolute;
+    top: 420px;
+    /*margin-top: -350px;*/
+    left:1380px;
+    /*margin-left: 1050px;*/
+}
+
+
+.btnDel{
+    background-color: #F3F4F7 ;
+    color: #4E6B81;
+}
+
+
+
+.StudentAcitivity{
+    /*width: 200px;*/
+    min-width: 200px;
+    min-height: 0px;
+    background-color: #f3f4f7;
+    padding: 10px;
+    margin: 50px 10px;
+    border-right: 1px solid #e2e2e2;
+    /*border-radius: 20px ;*/
+    position: fixed;
+    line-height: 25px;
+    box-shadow: 2px 2px 10px #38667c;
+    text-transform: capitalize;
+
+
+}
+.StudentAcitivity h{
+    font-size: 27px;
+    display: block;
+    margin: 0;
+    box-sizing: 50px;
+    padding: 10px;
+    color: #4E6B81;
+    font-weight: bold;
+    border-bottom: 1px solid #b3b7b9;   
+    border-top:  1px solid #b3b7b9;
+    /*background-color: #4E6B81*/
+    position: relative; text-transform: capitalize;
+
+
+}
+
+/***************************************dept******************************/
+.movDeptPost{
+    position: absolute;
+    top: 250px;
+    left: 550px;
+}
+.campBar{
+    /*background-color: #9cd0ea;*/
+    position: absolute;
+    top: -180px;
+    right:  10px;
+    border-radius: 10px;
+}
+#depInf{
+    position: absolute;
+    width: 350px;
+    /*height: 100px;*/
+    font-size: 20px;
+    border-radius: 10px;
+    right: 1270px;
+    top: -23px;
+    text-align: center;
+    /*    padding-left: 10px;
+        padding-top: 10px;*/
+    padding: 20px;
+
+}
+.selProm select
+{
+    border: 1px solid #ccc;
+    font-size: 16px;
+    height: 24px;
+    width: 68px;
+    text-align: center;
+}
+

@@ -1,0 +1,155 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 30-Jun-2017, 19:12:27
+    Author     : rabab
+*/
+.UserName{
+    position: absolute;
+       right: 587px;
+       top: 146px;
+    color: #16417E;
+    font-size: 20px;
+    text-transform: capitalize; 
+}
+.PositionMember{
+    position: absolute;
+         right: 500px;
+         top: 249px;
+    color: #16417E;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize; 
+
+}
+.Dep_name{
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize; 
+    color: #0591f8;
+}
+.Dep_name:hover{
+    color: #ccccff;
+
+}
+.position_dep{
+    font-size: 20px;
+    width: 600px;
+    position: absolute;
+    /*right: -13px;*/
+    top: 26px;
+}
+.Evaluation{
+    width: 1200px;
+    height: 500px;
+    /*background-color: red;*/
+    position: absolute;
+    right: -6px;
+    top: 359px;
+
+}
+
+#profile-container{
+    width: 230px;
+    height: 230px;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    image-resolution: 200dpi snap;
+/*    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);*/
+    transform: rotate(360deg);
+    -webkit-image-resolution: 200dpi snap;
+    -moz-image-resolution: 200dpi snap;
+    -ms-image-resolution: 200dpi snap;
+    -o-image-resolution: 200dpi snap;
+    border-bottom-style: solid;
+    border-bottom-style: solid;
+    border-bottom: 100px;
+    box-shadow: 0 1px 3px #000 ;
+    position: relative;
+    /*margin-right:  auto;*/
+    right: -700px;
+
+}
+#profile-container img {
+    width: 230px;
+    height: 230px;
+    image-resolution: 72dpi;
+    border-bottom-style: solid;
+    border-bottom: 100px;
+    box-shadow: 0 1px 3px #000 ;
+
+} 
+.BackGround{
+    background-color: #F3F4F7;
+    /*background-image: url('3.jpeg');*/
+    height: 150px;
+    margin: 10px 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    border-bottom:  1px solid #e2e2e2;
+    /*box-shadow: 2px 2px 10px #ccccff;*/
+
+
+
+    /*width: 100%;*/
+
+}
+
+
+.Profile_Detail{
+
+    /*background-color: yellowgreen;*/
+    width: 400px;
+    /*height: 200px;*/
+    font-size: 20px;
+    line-height: 40px;
+    color: #16417E;
+    padding: 10px;
+    margin:  50px;
+    border-right:   1px solid #ccccff;
+}
+.data_user{
+    width:  50px;
+    height: 70px;
+    box-sizing: border-box;
+    border: 2px hidden #ccc;
+    background-position:  10px 16px; 
+    background-repeat: no-repeat; 
+    background-size: 40px;
+}
+#data_1{
+    background-image:url('email.png');
+
+}
+#data_2{
+    background-image:url('bd.png');
+
+}#data_3{
+    background-image:url('mobile.png');
+
+}#data_4{
+    background-image:url('address.png');
+
+}
+#data_5{
+    background-image:url('gender.png');
+
+}td
+{
+    padding:0 15px 0 15px;
+}

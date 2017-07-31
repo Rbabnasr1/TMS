@@ -1,0 +1,175 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 29-Jun-2017, 16:40:03
+    Author     : mena
+*/
+
+h1{
+    font-size: 40px;
+    text-align: center;
+      color: #0a426c;
+}
+
+.butns {
+    width: 100px;
+    padding: 10px 10px;
+    background-color: #0a426c;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    position: relative;
+    right: -350px;
+   margin-left:   350px;
+   margin-bottom: 20px;
+   text-transform: capitalize;
+   font-family: sans;
+   cursor: pointer;
+   
+}
+.butns:hover{
+     background-color: #3468af;
+}
+
+
+.infoCamp{
+      width: 850px;
+      color: #0a426c;
+      
+    /*height: 550px;*/
+    position: relative;
+    background-color: #F3F4F7;
+    border-radius: 20px;
+    box-shadow: 1px 5px 8px #d4cad1,1px 10px 20px #d4cad1;
+    overflow: hidden;    overflow-x: hidden;
+padding-left: 30px;
+    margin-left: 400px;
+    margin-top: 10px;
+    line-height: 50px;
+    /*overflow-x: hidden;*/
+    min-height: 100px;
+    /*max-height: 500px;*/
+    text-align: start;
+    font-size: 20px;
+    display: inline-block;
+    /*float: right;*/
+    /*clear: left;*/
+    text-align:  start;
+    
+}
+
+input[type="text"]
+{
+    min-width:  140px;
+    height: 30px;
+    overflow: hidden;
+}
+
+
+.selB select
+{
+     border: 1px solid #ccc;
+   font-size: 16px;
+   height: 34px;
+   width: 168px;
+   text-align: center;
+}
+td
+{
+    padding:0 15px 0 15px;
+}.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+/*.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}*/
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
+
+.blog{
+    width: 100px;
+    padding: 10px 10px;
+    background-color: #0a426c;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+   text-transform: capitalize;
+   font-family: sans;
+cursor: pointer;
+}
+
+
+.blog:hover {
+     background-color: #3468af;
+}

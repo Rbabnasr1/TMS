@@ -1,0 +1,463 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 23-Jun-2017, 21:01:47
+    Author     : rabab
+*/
+/**{
+    padding: 0;
+    margin: 0;
+}*/
+/*body{
+
+    height: 2000px;
+    width: 2000px*/
+/*}*/
+
+
+
+.smallHeder{
+
+    list-style-type: none;
+    margin: 15px;
+    width: 543px;
+    height: 70px;
+    /*overflow: hidden;*/
+    background-color: #4E6B81;
+    border-radius: 5px;
+    box-shadow: 1px 5px 8px #d4cad1;
+    font-size: 22px;
+    padding: -2px 12px;
+    position: absolute;
+    top: 72px;
+    right: -7px;
+
+
+
+
+}
+.smallHeder li{ float: left;
+                padding-right:  10px}
+.smallHeder li a  {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 21px 36px;
+    display: block;
+    text-align: left;
+    font-size: 22px;
+    -webkit-transition: background .3s;
+    transition: background .3s;
+}
+.smallHeder li .liSmall:hover{
+    background-color: #F3F4F7;
+    color: #022640;
+    height: 28px;
+    text-decoration: none;
+}
+
+.DReport {
+    position: relative;
+    display: inline-block;
+}
+
+.Report-content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    min-width: 250px;
+    color: #38667c;
+    cursor: pointer;
+
+
+
+}
+
+.Report-content a {
+    color: #4E6B81;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+
+
+}
+
+.ReportB {
+    background-color:  #4E6B81;
+    color: #4E6B81;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+
+}
+
+
+.Report-content a:hover {background-color: #9cd0ea;color: #062d4a;font-weight: bold}
+
+.DReport:hover .Report-content {
+    display: block;
+}
+
+.DReport:hover .ReportB {
+    background: #F3F4F7;
+    color: #022640;
+}
+
+
+
+
+
+.BigPost{
+    width:800px;
+    height: 800px;
+    background-color: white;
+    position: absolute;
+    left: 400px;
+    top: 172px;
+    display: block;
+    padding: 10px;
+    font-size: 40px;
+    color: #062d4a;
+    border-radius: 5px 5px ;
+    text-transform: capitalize;
+
+
+
+
+}
+.postName{
+    width:700px;
+    min-height: 0px;
+    font-size: 30px;
+    color:#4E6B81; 
+    background-color: #F3F4F7;
+    padding: 10px;
+    position: relative;
+
+    line-height: 40px;
+    /*text-wrap: none;*/
+    font-weight: bold;
+    word-wrap: break-word;
+    /*position: absolute;*/
+    box-shadow: 1px 1px 10px #b3b7b9;
+    text-transform: capitalize;
+
+
+    /*padding: px;*/
+
+}
+.postName span.MsgPost{
+
+    font-weight: normal;
+    font-size: 25;
+    text-transform: capitalize;
+
+
+}
+.postName span.DatePost{
+    font-weight: normal;
+    font-size: 18;
+    color: #8b8c8c;
+    position: absolute;
+    right: 20px;
+    top:1px;   
+    text-transform: capitalize;
+
+}
+.Colum{
+    width:800px;
+    min-height: 600px;
+    background-color: #F3F4F7;
+    position: relative;
+    left: 20%;  
+    top:100px; 
+    border-right: 1px solid #e2e2e2;
+    color: #4E6B81;
+    padding: 30px;
+    box-shadow: 2px 2px 10px #38667c;
+    font-size: 50px;
+    font-weight: bold;
+    display: block;
+
+
+}
+.Colum .ColumChart{
+
+    position: absolute;
+    /*left:5%;*/
+    top: 95px;
+    -webkit-transition: all 1s ease-in-out;
+
+
+
+}
+
+.Colum .ColumChart:hover{
+
+    /*    position: absolute;
+        transform: scale(1.5,1.5);
+        top: 95px;*/
+
+}
+
+.ColumCam{
+
+    width:800px;
+    min-height: 700px;
+    background-color: #F3F4F7;
+    position: relative;
+    left: -4%;  
+    top:850px; 
+    border-right: 1px solid #e2e2e2;
+    color: #4E6B81;
+    padding: 30px;
+    box-shadow: 2px 2px 10px #38667c;
+    font-size: 50px;
+    font-weight: bold;
+    display: block; 
+
+
+}
+
+.ColumCam .ColumChartCamp{
+
+    position: absolute;
+    top: 95px;
+    -webkit-transition: all 1s ease-in-out;
+
+
+}
+.ColumCam .ColumChartCamp:hover {
+
+    /*position: absolute;*/
+    /*transform: scale(1.5,1.5);*/
+    /*top: 95px;*/
+
+    /*    width: 100%;
+        height: 100%;
+        margin: 20px auto;
+        background: url('SA.jpg')  seagreen ;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        transition: width .5s ease-in-out;
+        border: 1px;  box-shadow: 0 1px 3px #000 ;*/
+}
+.createSA{
+    width: 100%;
+    height: 100%;
+    margin: 20px auto;
+    background: url('SA.jpg')  seagreen ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    transition: width .5s ease-in-out;
+    border: 1px;  box-shadow: 0 1px 3px #000 ;
+
+
+}
+.createSA a{
+    position: absolute;
+    width: auto;
+    height: auto;
+    right:30%;
+    bottom: 50%;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    transition: all 3s ease-in-out;
+    -webkit-transition: all 3s ease-in-out;
+
+
+}
+
+.createSA a:hover{
+    color: white;
+    background-color: black;
+    opacity: .5;
+    transform: scale(1.5,1.5);
+    -webkit-transform: scale(1.5,1.5);
+
+}
+
+.StudentAcitivity{
+    /*width: 200px;*/
+    min-width: 200px;
+    min-height: 0px;
+    background-color: #f3f4f7;
+    padding: 10px;
+    margin: 50px 10px;
+    border-right: 1px solid #e2e2e2;
+    /*border-radius: 20px ;*/
+    position: fixed;
+    line-height: 25px;
+    box-shadow: 2px 2px 10px #38667c;
+    text-transform: capitalize;
+
+
+}
+.StudentAcitivity h{
+    font-size: 27px;
+    display: block;
+    margin: 0;
+    box-sizing: 50px;
+    padding: 10px;
+    color: #4E6B81;
+    font-weight: bold;
+    border-bottom: 1px solid #b3b7b9;   
+    border-top:  1px solid #b3b7b9;
+    /*background-color: #4E6B81*/
+    position: relative; text-transform: capitalize;
+
+
+}
+
+.StudentAcitivity a{
+    position: absolute;
+
+    font-size: 20px;
+    color: #38667c;
+    text-transform: capitalize;
+
+
+}
+
+.StudentAcitivity a:hover{
+    color: white;
+    background-color: #38667c;
+    opacity: .5;
+    transform: scale(1.2,1.2);
+    -webkit-transform: scale(1.2,1.2);
+}
+div.Tasks_Dep{
+    /*width: 200px;*/
+
+    right: 42px;
+    top: 520px;
+    min-width: 320px;
+    min-height: 0;
+    background-color: #f3f4f7;
+    padding: 10px;
+    margin: 50px 10px;
+    border-right: 1px solid #e2e2e2;
+    /*border-radius: 20px ;*/
+    position: absolute;
+    line-height: 35px;
+    box-shadow: 2px 2px 10px #38667c;
+    text-transform: capitalize;
+
+}
+
+.Tasks_Dep h{
+    font-size: 27px;
+    display: block;
+    margin: 0;
+    box-sizing: 50px;
+    padding: 10px;
+    color: #4E6B81;
+    font-weight: bold;
+    border-bottom: 1px solid #b3b7b9;   
+    border-top:  1px solid #b3b7b9;
+    position: relative;
+    text-transform: capitalize;
+
+
+}
+.Tasks_Dep a{
+    position: absolute;
+    font-size: 20px;
+    color: #38667c;
+    line-height: 30px;
+    text-transform: capitalize;
+
+}.Tasks_Dep a:hover{
+    color: white;
+    background-color: #38667c;
+    opacity: .5;
+    transform: scale(1.1,1.1);
+    -webkit-transform: scale(1.1,1.1);
+    /*padding: 10px;*/
+
+
+}
+
+.ReportStyle {
+    width: 320px;
+    height: 100px;
+    background-color: #f3f4f7;
+    border-right: 1px solid #e2e2e2;
+    position: absolute;
+    line-height: 25px;
+    box-shadow: 2px 2px 10px #38667c;
+    right: 50px;
+    top: 125px;
+    padding: 10px;
+    font-weight: bold;
+    color: #4E6B81;
+
+
+}
+.ReportStyle a{
+
+    color: #4E6B81;
+    font-size: 30px;
+    margin: 5px;
+
+
+}
+.ReportStyle a:hover{
+
+
+    font-size: 30px;
+    color: #0591f8;
+    /*background-color: #38667c;*/
+    opacity: .5;
+    /*    transform: scale(1.1,1.1);
+        -webkit-transform: scale(1.1,1.1);*/
+    margin: 5px;
+
+}
+
+#problem{
+
+
+    margin-left: 40px;
+}
+
+#problem:hover{
+    background-color:  #F3F4F7;
+    color: #0591f8
+}
+
+.imagePic{
+    /*margin: 80px;*/
+    width:400px;
+    height: 600px;
+    background: url('SA.jpg')  ;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /*background-size:  cover;*/
+    /*background-attachment: fixed;*/
+    transition: all .6s ease-in-out;
+    /*border: 1px;*/ 
+    /*box-shadow: 0 1px 3px #000 ;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: absolute;
+    right: 20px;
+    top:300px;
+
+
+}

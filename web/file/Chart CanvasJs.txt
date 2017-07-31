@@ -1,0 +1,121 @@
+window.onload = function () {
+//                  var Speratedlabel,var Speratedvalue;
+                var label = document.getElementById('label').value;
+                var value = document.getElementById('value').value;
+//                window.alert(label);
+//                window.alert(value);
+//var text="{y:"+parseFloat(Speratedvalue[i])+",legendText:"+Speratedlabel[i]+",label:"+Speratedlabel[i]+"}"
+
+
+                var splitlabel = label.split(',');
+                var splitvalue = value.split(',');
+//                  window.alert(Speratedvalue[2])
+                var array = [];
+                for (var i = 0; i < splitlabel.length; i++) {
+                    var text = "{y: " + splitvalue[i] + ",legendText:" + splitlabel[i] + ",label: " + splitlabel[i] + "}";
+                    array.push(text);
+
+                }
+//                window.alert(array)
+                var title = String(document.getElementById('title').value);
+
+//                console.log("hello")
+                var chart = new CanvasJS.Chart("chartContainer",
+                        {
+                            title: {
+                                text: title
+                            },
+                            animationEnabled: true,
+                            legend: {
+                                verticalAlign: "center",
+                                horizontalAlign: "left",
+                                fontSize: 20,
+                                fontFamily: "Helvetica"
+                            },
+                            theme: "theme2",
+                            data: [
+                                {
+                                    type: "pie",
+                                    indexLabelFontFamily: "Garamond",
+                                    indexLabelFontSize: 20,
+                                    indexLabel: "{label} {y}%",
+                                    startAngle: -20,
+                                    showInLegend: true,
+                                    toolTipContent: "{legendText} {y}%",
+                                    dataPoints: [array]
+
+//                                        {y: 83.24, legendText:"Google", label: "Google"},
+//                                        {y: 8.16, legendText: "Yahoo!", label: "Yahoo!"},
+//                                        {y: 4.67, legendText: "Bing", label: "Bing"},
+//                                        {y: 1.67, legendText: "Baidu", label: "Baidu"},
+//                                        {y: 0.98, legendText: "Others", label: "Others"}
+//                                    ]
+                                }
+                            ]
+                        });
+                chart.render();
+            }
+
+//            var labels = document.getElementById('label').value;
+//            var values = document.getElementById('value').value;
+//            alert(labels);
+
+
+//                                console.log("data Size==> " + data.length);
+//
+//            for (var i = 0; i < labels.length - 1; i++) {
+//
+//            var Speratedlabels = labels[i].split(',');
+//                    var Speratedvalues = values[i].split(',');
+////                            console.log("dataSperated[1]==> " + dataSperated[1]);
+//                    DataArray.push({Fst: parseFloat(Speratedvalues), Scnd: Speratedlabels);
+//                    }
+//                    console.log(DataArray);
+//                            var array = [];
+//                    $.each(DataArray, function (i, item) {
+//                        array.push({label: item.Scnd, y: item.Fst});
+//                        //alert(dps[0]);
+//                    });
+//                    
+//                    
+//                    window.onload =  function createChart(label1, label2, chartType, ChartNameparse,
+//                            array, divID) {
+//                        /******************Chart#6 Start **********/
+//                        var chart = new CanvasJS.Chart(divID,
+//                                {backgroundColor: "#2C3D4F",
+//                                    title: {
+//                                        text: "Departments",
+//                                        fontColor: "#fff"
+//                                    },
+//                                    animationEnabled: true,
+//                                    exportEnabled: true,
+//                                    axisY: {
+//                                        title: label2,
+//                                        labelFontColor: "#fff",
+//                                        titleFontColor: "#fff"
+//                                    },
+//                                    axisX: {
+//                                        labelFontColor: "#fff",
+//                                        fontColor: "#fff"
+//
+//                                    },
+//                                    legend: {
+//                                        verticalAlign: "bottom",
+//                                        horizontalAlign: "center",
+//                                        fontColor: "#fff"
+//
+//                                    },
+//                                    theme: "theme1",
+//                                    data: [
+//                                        {
+//                                            type: "pie",
+//                                            showInLegend: true,
+////                                    legendMarkerColor: "grey",
+//                                            legendText: label1,
+//                                            dataPoints: array}
+//                                    ]
+//                                });
+//                        chart.render();
+//      
+//                                  }
+            
